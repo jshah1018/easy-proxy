@@ -4,9 +4,9 @@
     "ssh_key_id": 6926458,
     "ssh_passphrase": "xxxxxx",
     "region": "fra1",
-    "rsa_id_path": "c:\\users\\joy\\private.ppk"
-    "proxy_user":"",
-    "proxy_pw":"",
+    "rsa_id_path": "c:\\users\\joy\\private.ppk",
+    "proxy_user": "xxxx",
+    "proxy_pw": "xxxx",
   },
   "vultr": {
     "apiKey": "xxxx"
