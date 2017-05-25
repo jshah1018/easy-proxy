@@ -3,8 +3,10 @@
     "api_key": "xxxxxxxxxxx",
     "ssh_key_id": 6926458,
     "ssh_passphrase": "xxxxxx",
-    "region": "nyc3",
-    "rsa_id_path": "/Users/billy/.ssh/id_rsa"
+    "region": "fra1",
+    "rsa_id_path": "c:\\users\\joy\\private.ppk"
+    "proxy_user":"",
+    "proxy_pw":"",
   },
   "vultr": {
     "apiKey": "xxxx"
