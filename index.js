@@ -1,4 +1,5 @@
 var config = require('./config');
+var proxy_txt = require('.proxies.txt);
 var SSH = require('simple-ssh');
 var randomstring = require("randomstring");
 var _ = require('underscore');
@@ -26,19 +27,10 @@ prompt.get([{
     }
     proxy_count = parseInt(result.count);
     for (var i=0; i < proxy_count; i++) {
-      var port = Math.floor(Math.random() * 6500) + 2000
-
-      var username = randomstring.generate({
-        length: 7,
-        charset: 'alphabetic',
-        capitalization: 'lowercase'
-      });
-
-      var password = randomstring.generate({
-        length: 14,
-        charset: 'alphabetic',
-        capitalization: 'lowercase'
-      });
+        
+      var port = config.digital_ocean.proxy_port;
+      var username = config.digital_ocean.proxy_user;
+      var password = config.digital_ocean.proxy_pw;
 
       create.push({
         username: username,
